@@ -14,7 +14,11 @@ nix build -f derivation-stdenv.nix
 # (Unlike nix profile install, the downloaded version of cargo isn't kept around permanently - it will be deleted at the next GC)
 nix run nixpkgs#cargo init rust-hello
 
+# Build
 nix build -f rust-derivation.nix
+
+# Run
+result/bin/rust-hello
 ```
 
 # c
